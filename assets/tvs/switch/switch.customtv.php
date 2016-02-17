@@ -9,8 +9,8 @@ $css = $assets->registerScript('switch',
 );
 
 $checked = (empty($field_value)) ? "" : "checked='checked'";
+echo $css;
 ?>
-<?php echo $css; ?>
 <label class="switch switch-small">
 <input type="checkbox" id="tv[+field_id+]" name="tv[+field_id+][]" value="1" <?php echo $checked; ?> onchange="documentDirty=true;" /><span></span>
 </label>
